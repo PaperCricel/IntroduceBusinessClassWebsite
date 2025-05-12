@@ -3,10 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的第一個網站</title>
+  <title>夢想旅遊</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, section, footer { padding: 20px; }
+    header { background-color: #f2f2f2; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: #333; }
+    .logo { width: 100px; }
+    .tour { border-bottom: 1px solid #ccc; padding: 10px 0; }
+    form { max-width: 400px; margin: auto; }
+    input, textarea { width: 100%; padding: 8px; margin: 5px 0; }
+    button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; }
+  </style>
 </head>
 <body>
-  <h1>歡迎來到我的網站！</h1>
-  <p>這是我第一個自己做的網頁！</p>
+
+<header>
+  <img src="logo.png" alt="公司標誌" class="logo">
+  <h1>夢想旅遊</h1>
+  <nav>
+    <a href="#tours">行程介紹</a>
+    <a href="#booking">預訂行程</a>
+    <a href="#contact">聯絡我們</a>
+  </nav>
+</header>
+
+<section id="tours">
+  <h2>熱門行程</h2>
+  <div class="tour">
+    <h3>陽明山一日遊</h3>
+    <p>探索美麗的自然風光，享受溫泉之旅。</p>
+  </div>
+  <div class="tour">
+    <h3>九份老街文化之旅</h3>
+    <p>體驗懷舊風情，品嚐在地美食。</p>
+  </div>
+</section>
+
+<section id="booking">
+  <h2>預訂行程</h2>
+  <form>
+    <label for="name">姓名：</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">電子郵件：</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="tour">選擇行程：</label>
+    <select id="tour" name="tour">
+      <option value="yangmingshan">陽明山一日遊</option>
+      <option value="jiufen">九份老街文化之旅</option>
+    </select>
+
+    <label for="message">其他需求：</label>
+    <textarea id="message" name="message"></textarea>
+
+    <button type="submit">送出預訂</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>聯絡我們</h2>
+  <p>電話：02-1234-5678</p>
+  <p>電子郵件：info@dreamtravel.com</p>
+  <p>地址：台北市中正區和平西路一段100號</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 夢想旅遊</p>
+</footer>
+
 </body>
 </html>
